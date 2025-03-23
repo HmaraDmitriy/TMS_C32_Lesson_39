@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить продукт</title>
+</head>
+<body>
+<h2>Добавить продукт</h2>
+<form action="/products" method="post">
+    <label>Название:</label>
+    <input type="text" name="name" required /><br/>
+
+    <label>Цена:</label>
+    <input type="number" name="price" required /><br/>
+
+    <button type="submit">Добавить</button>
+</form>
+
+<a href="/products"><button>Отмена</button></a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактирование пользователя</title>
+</head>
+<body>
+<h2>Редактирование пользователя</h2>
+<form action="/users/update" method="post">
+    <input type="hidden" name="id" value="${user.id}"/>
+
+    <label>Имя:</label>
+    <input type="text" name="name" value="${user.name}" required /><br/>
+
+    <label>Возраст:</label>
+    <input type="number" name="age" value="${user.age}" required /><br/>
+
+    <label>Email:</label>
+    <input type="email" name="email" value="${user.email}" required /><br/>
+
+    <label>Пол:</label>
+    <input type="text" name="sex" value="${user.sex}" required /><br/>
+
+    <button type="submit">Обновить</button>
+</form>
+
+<a href="/users"><button>Отмена</button></a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать продукт</title>
+</head>
+<body>
+<h2>Редактирование продукта</h2>
+<form action="/products/update/${product.id}" method="post">
+    <label>Название:</label>
+    <input type="text" name="name" value="${product.name}" required /><br/>
+
+    <label>Цена:</label>
+    <input type="number" name="price" value="${product.price}" required /><br/>
+
+    <button type="submit">Обновить</button>
+</form>
+
+<a href="/products"><button>Отмена</button></a>
+</body>
+</html>
