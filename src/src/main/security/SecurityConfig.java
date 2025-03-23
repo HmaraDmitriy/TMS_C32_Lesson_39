@@ -19,7 +19,7 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .formLogin(login -> login
-                        .loginPage("/login") // Страница входа
+                        .loginPage("/login")
                         .defaultSuccessUrl("/users", true)
                         .permitAll()
                 )

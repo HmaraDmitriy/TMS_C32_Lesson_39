@@ -36,7 +36,7 @@ public class UserController {
 
             if (user.isPresent()) {
                 model.addAttribute("user", user.get());
-                return "user-info"; // Страница с информацией о пользователе после входа
+                return "user-info";
             } else {
                 model.addAttribute("error", "Пользователь не найден!");
             }
